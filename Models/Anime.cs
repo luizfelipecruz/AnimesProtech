@@ -3,8 +3,8 @@
     public class Anime
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string synopsis { get; set; }
-        public string Editor { get; set; }
+        public string? Name { get; set; }
+        public string? synopsis { get; set; }
+        public string? Editor { get; set; }
     }   
 }
