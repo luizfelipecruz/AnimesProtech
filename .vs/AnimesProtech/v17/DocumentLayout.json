@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|c:\\users\\luiz felipe\\source\\repos\\animesprotech\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|c:\\users\\luiz felipe\\source\\repos\\animesprotech\\controllers\\animescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|solutionrelative:controllers\\animescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|c:\\users\\luiz felipe\\source\\repos\\animesprotech\\animesprotech.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|solutionrelative:animesprotech.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|c:\\users\\luiz felipe\\source\\repos\\animesprotech\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|c:\\users\\luiz felipe\\source\\repos\\animesprotech\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|c:\\users\\luiz felipe\\source\\repos\\animesprotech\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|c:\\users\\luiz felipe\\source\\repos\\animesprotech\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9A7D2BB0-41E6-476B-8F66-8EAEDC2594EB}|AnimesProtech.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\.vs\\AnimesProtech\\config\\applicationhost.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.vs\\AnimesProtech\\config\\applicationhost.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimesProtech.http",
+              "DocumentMoniker": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\AnimesProtech.http",
+              "RelativeDocumentMoniker": "AnimesProtech.http",
+              "ToolTip": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\AnimesProtech.http",
+              "RelativeToolTip": "AnimesProtech.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-04-14T02:35:38.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-14T02:35:35.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "applicationhost.config",
+              "DocumentMoniker": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\.vs\\AnimesProtech\\config\\applicationhost.config",
+              "RelativeDocumentMoniker": ".vs\\AnimesProtech\\config\\applicationhost.config",
+              "ToolTip": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\.vs\\AnimesProtech\\config\\applicationhost.config",
+              "RelativeToolTip": ".vs\\AnimesProtech\\config\\applicationhost.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-14T02:34:10.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-14T02:32:32.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T02:32:08.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABMAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-14T02:29:49.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnimesController.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\Controllers\\AnimesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimesController.cs",
+              "ToolTip": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\Controllers\\AnimesController.cs",
+              "RelativeToolTip": "Controllers\\AnimesController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T02:16:28.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Luiz Felipe\\source\\repos\\AnimesProtech\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T02:12:43.416Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnimesProtech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9aee428ccf6e9364edc562c452260d608026d4b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnimesProtech")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnimesProtech")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

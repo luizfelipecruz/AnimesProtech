@@ -1,6 +1,6 @@
 @AnimesProtech_HostAddress = http://localhost:5084
 
-GET {{AnimesProtech_HostAddress}}/weatherforecast/
+GET {{AnimesProtech_HostAddress}}/AnimesProtech/
 Accept: application/json
 
 ###
