@@ -1,5 +1,6 @@
 ﻿using AnimesProtech.Context;
 using AnimesProtech.Models;
+using AnimesProtech.Negocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AnimesProtech.Controllers
@@ -9,25 +10,11 @@ namespace AnimesProtech.Controllers
     public class UsuarioController : ControllerBase
 
     {
-        private readonly AnimeProtech _animeProtech;
+    
 
-        public UsuarioController(AnimeProtech animeProtech)
-        {
-            _animeProtech = animeProtech;
-        }
+    
 
-        [HttpPost("LoginUser")]
-        public IActionResult CreateUser(string login, string senha)
-        {
-            var Anime = _animeProtech.usuarios.Find(login);
-
-            if (Anime == null)
-            {
-                return NotFound("Usuario não encontrado.");
-            }
-
-            return Ok(Anime);
-        }
+       
 
         [HttpPost("UpdateUser/{id}")]
         public IActionResult updateUser(int id, Usuario usuarioRequest)
@@ -40,27 +27,11 @@ namespace AnimesProtech.Controllers
                     return BadRequest("ID inválido.");
                 }
 
-                var usuario = _animeProtech.usuarios.Find(id);
+                NegUsuario user = new NegUsuario();
+                user.Authenticate(usuarioRequest.Login, usuarioRequest.Password);
+                
 
-                if (usuario != null)
-                {
-                    if (!string.IsNullOrEmpty(usuarioRequest.Login))
-                    {
-                        usuario.Login = usuarioRequest.Login;
-                    }
-
-                    if (!string.IsNullOrEmpty(usuarioRequest.Email))
-                    {
-                        usuario.Email = usuarioRequest.Email;
-                    }
-                    if (usuarioRequest.Password != null)
-                    {
-                        usuario.Password = usuarioRequest.Password;
-                    }
-                    _animeProtech.SaveChanges();
-                }
-
-                return Ok(usuario);
+                return Ok(user);
             }
             catch (Exception ex)
             {

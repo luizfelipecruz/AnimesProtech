@@ -1,7 +1,10 @@
 ﻿using AnimesProtech.Context;
 using AnimesProtech.Models;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using AnimesProtech.Negocio;
+using System.Diagnostics;
 
 namespace AnimesProtech.Controllers
 {
@@ -9,85 +12,103 @@ namespace AnimesProtech.Controllers
     [Route("Animes")]
     public class AnimesController : Controller
     {
-        private readonly AnimeProtech _animeProtech;
-        public AnimesController(AnimeProtech animeProtech)
-        {
-            _animeProtech = animeProtech;
-        }
+
         [HttpPost("CreateAnime")]
-        public IActionResult CreateAnime(Anime anime)
+        public IActionResult CreateAnime(string name, string synopsis, string editor)
         {
-            _animeProtech.Add(anime);
-            _animeProtech.SaveChanges();
-            return Ok(anime);
+
+            if (string.IsNullOrEmpty(name))
+            {
+                return BadRequest("Informe o nome do anime.");
+            }
+
+            if (string.IsNullOrEmpty(synopsis))
+            {
+                return BadRequest("Informe a sinopse do anime.");
+            }
+
+            if (string.IsNullOrEmpty(editor))
+            {
+                return BadRequest("Informe a sinopse do anime.");
+            }
+
+
+            NegAnimes anime = new NegAnimes();
+            try
+            {
+                anime.Create(name, synopsis, editor);
+                if (anime != null)
+                {
+                    return Ok(anime);
+                }
+                else
+                {
+                    return BadRequest("Não foi possivel criar anime");
+                }
+            }
+            catch (Exception)
+            {
+                return BadRequest("Não foi possivel criar anime");
+            }
         }
 
-        [HttpGet("GetAnimes/{Id}")]
-        public IActionResult GetAnime(int Id)
+        [HttpGet("GetAnimes/{id}")]
+        public IActionResult GetAnime(int id)
         {
-            var Anime = _animeProtech.Animes.Find(Id);
-
-            if (Anime == null)
+            if (id > 0)
             {
-                return NotFound();
+
+                NegAnimes anime = new NegAnimes();
+                anime.find(id);
+
+                if (anime == null)
+                {
+                    return NotFound("Anime não encontrado");
+                }
+                return Ok(anime);
             }
-            return Ok(Anime);
+
+            return BadRequest("Anime Não encontrado.");
         }
 
         [HttpPut("UpdateAnime/{id}")]
-        public ActionResult AtualizarAnime(int id, Anime animerequest)
+        public ActionResult AtualizarAnime(int id, string name, string synopsis, string editor)
         {
             try
             {
-                // Validação do id
                 if (id <= 0)
                 {
                     return BadRequest("ID inválido.");
                 }
 
-                // Validação do animerequest
-                if (animerequest == null)
-                {
-                    return BadRequest("Objeto de requisição inválido.");
-                }
-
-                var anime = _animeProtech.Animes.Find(id);
-
-                if (anime == null)
-                {
-                    return NotFound("Anime não encontrado.");
-                }
-
-                // Atualiza as propriedades do anime com as propriedades fornecidas no animerequest
-                if (!string.IsNullOrEmpty(animerequest.Name))
-                {
-                    anime.Name = animerequest.Name;
-                }
-
-                if (!string.IsNullOrEmpty(animerequest.synopsis))
-                {
-                    anime.synopsis = animerequest.synopsis;
-                }
-
-                if (!string.IsNullOrEmpty(animerequest.Editor))
-                {
-                    anime.Editor = animerequest.Editor;
-                }
-
-                // Salva as alterações no banco de dados
-                _animeProtech.SaveChanges();
+                NegAnimes anime = new NegAnimes();
+                anime.update(id, name, synopsis, editor);
 
                 return Ok("Anime atualizado com sucesso.");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                // Log de erro
-                Console.WriteLine($"Erro ao atualizar anime: {ex.Message}");
                 return StatusCode(500, "Ocorreu um erro ao atualizar o anime.");
             }
         }
+        [HttpPut("DeleteAnime{id}")]
+        public IActionResult DeleteAnime(int id)
+        {
+            if (id < 0)
+            {
+                return BadRequest("Insira um Id valido.");
+            }
+            try
+            {
+                NegAnimes anime = new NegAnimes();
+                anime.delete(id);
 
-
-
+                return Ok("Usuario Deletado com Sucesso.");
+            }
+            catch (Exception)
+            {
+                return BadRequest("Não foi possivel excluir Anime.");
+            }
+        }
     }
 }

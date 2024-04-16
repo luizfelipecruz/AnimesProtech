@@ -135,3 +135,4 @@ C:\Users\Luiz Felipe\source\repos\AnimesProtech\obj\Debug\net8.0\AnimesProtech.p
 C:\Users\Luiz Felipe\source\repos\AnimesProtech\obj\Debug\net8.0\AnimesProtech.genruntimeconfig.cache
 C:\Users\Luiz Felipe\source\repos\AnimesProtech\obj\Debug\net8.0\ref\AnimesProtech.dll
 C:\Users\Luiz Felipe\source\repos\AnimesProtech\obj\Debug\net8.0\AnimesProtech.sourcelink.json
+C:\Users\Luiz Felipe\source\repos\AnimesProtech\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
