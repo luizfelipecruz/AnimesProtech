@@ -22,7 +22,7 @@ namespace AnimesProtech.Negocio
 
         public string Login(string login, string password)
         {
-            var User = _animeProtech.user
+            var User = _animeProtech.usuarios
                            .Where(u => (u.Login == login) && (u.Password == password)).FirstOrDefault();
             if (User != null)
             {
@@ -35,7 +35,7 @@ namespace AnimesProtech.Negocio
         public List<User>? list(string login)
 
         {
-            var User = _animeProtech.user
+            var User = _animeProtech.usuarios
                 .Where(a => (a.IsDeleted == false) &&
                 (string.IsNullOrEmpty(login) || a.Login.Contains(login)))
                 .ToList();
@@ -50,7 +50,7 @@ namespace AnimesProtech.Negocio
 
         public User? Update(User user)
         {
-            var UserCotext = _animeProtech.user.Find();
+            var UserCotext = _animeProtech.usuarios.Find();
             if (UserCotext != null)
             {
                 if (!string.IsNullOrEmpty(user.Login))
@@ -71,7 +71,7 @@ namespace AnimesProtech.Negocio
         }
         public bool Delete(int id)
         {
-            var UserCotext = _animeProtech.user.Find();
+            var UserCotext = _animeProtech.usuarios.Find();
             if (UserCotext != null)
             {
                 UserCotext.IsDeleted = UserCotext.IsDeleted;

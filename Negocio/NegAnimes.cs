@@ -1,21 +1,21 @@
 ﻿using AnimesProtech.Context;
 using AnimesProtech.Models;
 using Microsoft.AspNetCore.Components.Forms;
-using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using AnimesProtech.Negocio;
+using System.Diagnostics;
+using Microsoft.AspNetCore.Authentication;
+using AnimesProtech.Controllers;
 
 namespace AnimesProtech.Negocio
 {
-    public class NegAnimes : Anime
+    public class NegAnimes : AnimesController
+
     {
-
-        private readonly AnimeProtech _animeProtech;
-        public NegAnimes(AnimeProtech animeProtech)
+        public NegAnimes(AnimeProtech animeProtech) : base(animeProtech)
         {
-            _animeProtech = animeProtech;
-        }
-        public NegAnimes()
-        {
-
+            var _animeProtech = animeProtech;
         }
 
         public Anime Create(string name, string synopsis, string editor)
@@ -41,9 +41,11 @@ namespace AnimesProtech.Negocio
             }
         }
 
+    
         public Anime find(int id)
         {
-            var anime = _animeProtech.Animes
+
+        var anime = _animeProtech.Animes
                             .Where(a => (a.Id == id) && (a.IsDeleted == false)).FirstOrDefault();
 
             if (anime != null)

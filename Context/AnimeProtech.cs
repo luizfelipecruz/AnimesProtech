@@ -11,7 +11,8 @@ namespace AnimesProtech.Context
 
         }
         public DbSet<Anime> Animes { get; set; }
-        public DbSet<Usuario> usuarios {  get; set; }   
+        public DbSet<User> usuarios {  get; set; }   
         public DbSet<Log> logs { get; set; }
+
     }
 }

@@ -12,6 +12,12 @@ namespace AnimesProtech.Controllers
     [Route("Animes")]
     public class AnimesController : Controller
     {
+        protected readonly AnimeProtech _animeProtech;
+
+        public AnimesController(AnimeProtech animeProtech)
+        {
+            animeProtech = _animeProtech;
+        }
 
         [HttpPost("CreateAnime")]
         public IActionResult CreateAnime(string name, string synopsis, string editor)

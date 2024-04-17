@@ -8,7 +8,7 @@ namespace AnimesProtech.Services
 {
     public class Tokens
     {
-        public static object GenerateToken(Usuario usuario)
+        public static object GenerateToken(User usuario)
         {
             var key = Encoding.ASCII.GetBytes(Secret.key);
             var tokenConfig = new SecurityTokenDescriptor
